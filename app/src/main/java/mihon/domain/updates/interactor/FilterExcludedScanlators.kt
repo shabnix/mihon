@@ -9,7 +9,7 @@ import tachiyomi.domain.updates.model.UpdatesWithRelations
  * @property getExcludedScanlators Fetches the excluded scanlators for a manga ID.
  */
 class FilterExcludedScanlators(
-    private val getExcludedScanlators: GetExcludedScanlators
+    private val getExcludedScanlators: GetExcludedScanlators,
 ) {
 
     /**

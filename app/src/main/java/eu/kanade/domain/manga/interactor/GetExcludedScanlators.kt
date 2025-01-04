@@ -26,6 +26,6 @@ class GetExcludedScanlators(
         return handler.subscribeToList {
             excluded_scanlatorsQueries.observeChanges()
         }
-            .map {  }
+            .map { }
     }
 }

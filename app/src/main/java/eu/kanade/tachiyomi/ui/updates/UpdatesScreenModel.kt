@@ -82,7 +82,7 @@ class UpdatesScreenModel(
                 getUpdates.subscribe(limit).distinctUntilChanged(),
                 downloadCache.changes,
                 downloadManager.queueState,
-                getExcludedScanlators.notify()
+                getExcludedScanlators.notify(),
             ) { updates, _, _, _ -> updates }
                 .catch {
                     logcat(LogPriority.ERROR, it)
